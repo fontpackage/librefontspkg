@@ -1,0 +1,53 @@
+---
+libreFontsPackageVersion: 0.1
+libreFontsPackage:
+  name: #MUST
+  description: #MUST
+  repository:
+    url: #MUST
+    ufr: #MUST : a boolean?
+  project url: #SHOULD : Link to issues and support, specimen website
+  changelog: #SHOULD : Use UFR FONTLOG.md file by default
+  projectStatus: #MUST : Use UFR by default
+  dist: #MUST
+  - latest: #MUST
+      otf: # URL, use ./fonts/otf by deafult
+      ttf: # URL, use ./fonts/ttf  by deafult
+      webfonts: # URL, use ./fonts/webfonts  by deafult
+  - dev: #MAY: Use git branch `dev` by defult
+      otf: # use  URL, ./fonts/otf on `dev` branch by deafult
+      ttf: # use  URL, ./fonts/ttf on `dev` branch by deafult
+      webfonts: #  URL,use ./dev/webfonts on `dev` branch by deafult
+  - versions: #SHOULD: Use git tags by defult.
+      - v0.001: # openFV <https://github.com/openfv/openfv>
+        otf: #  URL, use ./dev/otf  by deafult
+        ttf: #  URL, use ./dev/ttf  by deafult
+        webfonts: #  URL, use ./dev/webfonts by deafult
+      - v0.002: # openFV <https://github.com/openfv/openfv>
+        otf: #  URL, use ./dev/otf  by deafult
+        ttf: #  URL, use ./dev/ttf  by deafult
+        webfonts: #  URL, use ./dev/webfonts by deafult
+  publisherConfig:
+    vendor: # name
+    directory url: # font directroy URL name
+
+metadata: #MUST Use UFR METADATA.yml file by default. If not UFR, include metadata here following the UFR METADATA.yml standard as following.
+typeface family:
+  tags:
+  - sans-serif
+  - pixel
+  - 80s
+  - condesed
+  - grotesque
+  - monospace
+  - incomplete
+  - decorative
+  tools:
+  - Inkscape
+  - Fontforge
+  similar fonts:
+  - Helvetica
+  - Neue Haas Grotesk
+  sample text:
+  - en_us: The quick brown fox jumps over the lazy dog
+...
